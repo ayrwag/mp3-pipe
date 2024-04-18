@@ -73,5 +73,5 @@ firebase.json
 .firebaserc
 firestore.indexes.json
 
-./build
+#./build
 ./dist
