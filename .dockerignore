@@ -1,0 +1,6 @@
+.env
+node_modules
+dist
+src
+youbox-396214-f61dab858186.json
+*.mp3
