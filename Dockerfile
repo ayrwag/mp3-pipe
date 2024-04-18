@@ -20,7 +20,7 @@ COPY package*.json ./build
 RUN npm install
 
 # Copy the rest of the application code to the container
-COPY . .
+COPY ./build .
 
 # Build the TypeScript code (results in compiled JavaScript files in dist)
 RUN npm run build
@@ -29,4 +29,4 @@ RUN npm run build
 EXPOSE 8080
 
 # Specify the command to run the application
-CMD ["node", "dist/index.js"]
+CMD ["node", "build/index.js"]
