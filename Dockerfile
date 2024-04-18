@@ -23,7 +23,7 @@ RUN npm install
 COPY ./build .
 
 # Build the TypeScript code (results in compiled JavaScript files in dist)
-RUN npm run build
+#RUN npm run build
 
 # Expose the port your application will run on
 EXPOSE 8080
